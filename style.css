@@ -1,5 +1,5 @@
 .mainSquare{
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -11,14 +11,30 @@
 }
 
 #searchButton{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 45%;
+    left: 45%;
     width: 60.03px;
     height: 60px;
+    transition: transform 1s ease-out;
 }
 
-body{
-    background-color: rgb(92, 144, 189);
+#searchButton.animate {
+    transform: translate(-220px, 0);
+}
+
+#searchBar{
+    position: absolute;
+    top: 365px;
+    left: 165px;
+    width: 347px;
+    transition: transform 1s ease-out;
+}
+
+#searchBar.animate {
+    transform: translate(90px, 0);
+}
+
+body{ 
+   background-color: rgb(92, 144, 189);
 }
