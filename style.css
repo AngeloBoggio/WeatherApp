@@ -20,20 +20,50 @@
 }
 
 #searchButton.animate {
-    transform: translate(-220px, 0);
+    transform: translate(-150px, 0);
 }
 
 #searchBar{
     position: absolute;
     top: 365px;
-    left: 165px;
-    width: 347px;
-    transition: transform 1s ease-out;
+    left: 220px;
+    width: 220px;
+    height: 3px;
+    opacity: 0;
+    display: block;
+    transition: transform 1s ease-in;
 }
 
 #searchBar.animate {
-    transform: translate(90px, 0);
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
+
+.input-wrapper {
+    position: absolute;
+    top: 315px;
+    left: 214px;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    opacity: 0;
+  }
+  
+  .input-wrapper input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 200px;
+    box-sizing: border-box;
+    font-size: 30px;
+  }
+
+  .input-wrapper.animate {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  
 
 body{ 
    background-color: rgb(92, 144, 189);
