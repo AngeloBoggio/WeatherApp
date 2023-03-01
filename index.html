@@ -9,14 +9,18 @@
 </head>
 <body>
 
-    <div class="mainSquare">
+    <div class="mainSquare" id="mainSquare">
         <div class="searchRelated">
             <div id="input-wrapper" class="input-wrapper">
-                <input type="text" placeholder="Enter a city">
+                <input type="text" id="user-input" placeholder="Enter a city">
             </div>
             <img id="searchButton" src="/icons/searchButton.png">
             <img id="searchBar" src="/icons/Line 1.png">
         </div>
+        <div id="cityName"></div>
+        <div id="weather"></div>
+        <div id="description"></div>
+        <div id="weatherStatus"></div>
     </div>
     <script src="/weather.js"></script>
 </body>

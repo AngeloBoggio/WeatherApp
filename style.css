@@ -1,70 +1,142 @@
 .mainSquare{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 650px;
-    height: 685px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  height: 685px;
 
-    background: #F5F1F1;
-    border-radius: 30px;
+  background: #F5F1F1;
+  border-radius: 30px;
 }
 
 #searchButton{
-    position: absolute;
-    top: 45%;
-    left: 45%;
-    width: 60.03px;
-    height: 60px;
-    transition: transform 1s ease-out;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 60.03px;
+  height: 60px;
+  transition: transform 1s ease-out;
 }
 
 #searchButton.animate {
-    transform: translate(-150px, 0);
+  transform: translate(-150px, 0);
 }
 
 #searchBar{
-    position: absolute;
-    top: 365px;
-    left: 220px;
-    width: 220px;
-    height: 3px;
-    opacity: 0;
-    display: block;
-    transition: transform 1s ease-in;
+  position: absolute;
+  top: 365px;
+  left: 220px;
+  width: 220px;
+  height: 3px;
+  opacity: 0;
+  display: block;
+  transition: opacity 1s ease-in-out;
 }
 
 #searchBar.animate {
-    transform: translate(0px, 0px);
-    opacity: 1;
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .input-wrapper {
-    position: absolute;
-    top: 315px;
-    left: 214px;
-    background-color: transparent;
-    border-radius: 5px;
-    padding: 10px;
-    display: block;
-    opacity: 0;
-  }
-  
-  .input-wrapper input {
-    border: none;
-    background-color: transparent;
-    outline: none;
-    width: 200px;
-    box-sizing: border-box;
-    font-size: 30px;
-  }
+  position: absolute;
+  top: 315px;
+  left: 214px;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
-  .input-wrapper.animate {
-    transform: translate(0px, 0px);
-    opacity: 1;
-  }
-  
+.input-wrapper input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 200px;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.input-wrapper.animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+#weather{
+  font-family: Google Sans,Roboto,arial,sans-serif;
+  position: absolute;
+  font-size: 80px;
+  top: 450px;
+  left: 261px;
+}
+
+#description{
+  font-family: HF HySans Medium;
+  font-size: 45px;
+  font-weight: 100;
+}
+
+.cloudyLogo{
+  position:absolute;
+  top: 225px;
+  left: 210px;
+}
+
+.sunnyLogo{
+  position:absolute;
+  top: 190px;
+  left: 210px;
+}
+
+.brokencloudslogo{
+    position:absolute;
+    top: 200px;
+    left: 210px;
+}
+
+.rainlogo{
+  position:absolute;
+    top: 230px;
+    left: 238px;
+}
+
+.stormlogo{
+  position:absolute;
+  top: 220px;
+  left: 238px;
+}
+
+.snowlogo{
+  position:absolute;
+  top: 210px;
+  left: 220px;
+}
+
+.mistylogo{
+  position:absolute;
+  top: 210px;
+  left: 180px;
+}
+
+#cityName{
+  position:absolute;
+  top: 15%;
+  left: 37%;
+  font-size: 35px;
+  font-family: Google Sans,Roboto,arial,sans-serif;
+}
+
+#weatherStatus{
+  position: absolute;
+  top: 85%;
+  left: 28%;
+  font-size: 40px;
+
+}
 
 body{ 
-   background-color: rgb(92, 144, 189);
+ background-color: rgb(92, 144, 189);
 }
