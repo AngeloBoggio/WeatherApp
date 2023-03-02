@@ -69,7 +69,7 @@
   font-family: Google Sans,Roboto,arial,sans-serif;
   position: absolute;
   font-size: 80px;
-  top: 450px;
+  top: 440px;
   left: 261px;
 }
 
@@ -81,14 +81,14 @@
 
 .cloudyLogo{
   position:absolute;
-  top: 225px;
-  left: 210px;
+  top: 200px;
+  left: 190px;
 }
 
 .sunnyLogo{
   position:absolute;
-  top: 190px;
-  left: 210px;
+  top: 205px;
+  left: 205px;
 }
 
 .brokencloudslogo{
@@ -99,7 +99,7 @@
 
 .rainlogo{
   position:absolute;
-    top: 230px;
+    top: 250px;
     left: 238px;
 }
 
@@ -116,25 +116,38 @@
 }
 
 .mistylogo{
-  position:absolute;
+  position: absolute;
   top: 210px;
   left: 180px;
 }
 
 #cityName{
-  position:absolute;
-  top: 15%;
-  left: 37%;
-  font-size: 35px;
-  font-family: Google Sans,Roboto,arial,sans-serif;
+  position: relative;
+  top: 50px;
+  left: 210px;
+  width: 200px; /* set a fixed width */
+  height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #weatherStatus{
-  position: absolute;
-  top: 85%;
-  left: 28%;
-  font-size: 40px;
-
+  position: relative;
+  top: 340px;
+  left: 235px;
+  width: 150px; /* set a fixed width */
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 body{ 
