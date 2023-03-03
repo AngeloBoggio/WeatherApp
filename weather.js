@@ -7,7 +7,7 @@ const weatherDesc = document.getElementById('description');
 const cityName = document.getElementById('cityName');
 const weatherStatus = document.getElementById('weatherStatus');
 const searchForm = document.getElementById('searchForm');
-
+const exit = document.getElementById('exit');
 
 const lat = 25.7743;
 const lon = -80.1937;
@@ -28,7 +28,9 @@ userInput.addEventListener('keydown', (event) =>{
   
   if(event.keyCode === 13){
     const inputValue = event.target.value;
-    console.log(inputValue);
+    exit.style.display = "block";
+    
+
     
     fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&appid=${API_KEY}`)
       .then(response => response.json())
@@ -122,7 +124,7 @@ userInput.addEventListener('keydown', (event) =>{
             parent.appendChild(img);
 
           }
-          
+          exit.style.display = "block";
           weatherStatus.innerHTML = weatherdata.weather[0].description;
           cityName.innerHTML  = data[0].name;
           const temp = Math.floor(((weatherdata.main.temp - 273.15) * 9/5 + 32));
@@ -137,3 +139,6 @@ userInput.addEventListener('keydown', (event) =>{
   }
 })
 
+exit.addEventListener('click', () => {
+    location.reload(); 
+});
