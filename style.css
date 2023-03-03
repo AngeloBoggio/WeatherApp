@@ -169,3 +169,187 @@
 body{ 
  background-color: rgb(87, 109, 129);
 }
+
+
+@media screen and (max-width: 600px) {
+
+  .mainSquare{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 385px;
+    cursor: pointer;
+    background: #F5F1F1;
+    border-radius: 30px;
+  }
+
+  #searchHeader{
+    position: relative;
+    top: 60%;
+    left: 38%;
+    font-family: Google Sans,Roboto,arial,sans-serif;
+  }
+
+  
+  #exit{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: none;
+  }
+
+  #searchButton{
+    position: absolute;
+    top: 45%;
+    left: 42%;
+    width: 60.03px;
+    height: 60px;
+    transition: transform 1s ease-out;
+  }
+
+  #searchButton.animate {
+    transform: translate(-130px, 0);
+  }
+
+  #searchBar{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    width: 220px;
+    height: 3px;
+    opacity: 0;
+    display: block;
+    transition: opacity 1s ease-in-out;
+  }
+
+
+  #searchBar.animate {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+
+  .input-wrapper {
+    position: absolute;
+    top: 47%;
+    left: 24%;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .input-wrapper input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 200px;
+    box-sizing: border-box;
+    font-size: 30px;
+  }
+
+  .input-wrapper.animate {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+
+   .brokencloudslogo{
+    position:absolute;
+    top: 32%;
+    left: 30%;
+    height: 85px;
+  }
+
+  .cloudyLogo{
+    position:absolute;
+    top: 35%;
+    left: 33%;
+    height: 90px;
+  }
+
+  .sunnyLogo{
+    position:absolute;
+    top: 32%;
+    left: 34%;
+    height: 100px;
+  }
+
+  .rainlogo{
+    position:absolute;
+    top: 35%;
+    left: 32%;
+    height: 85px;
+  }
+
+  .stormlogo{
+    position:absolute;
+    top: 35%;
+    left: 32%;
+    height: 85px;
+  }
+  
+  .snowlogo{
+    position:absolute;
+    top: 35%;
+    left: 32%;
+    height: 85px;
+  }
+  
+  .mistylogo{
+    position:absolute;
+    top: 35%;
+    left: 32%;
+    height: 85px;
+  }
+
+
+  #weather{
+    top: 63%;
+    left: 40%;
+    font-size: 45px;
+  }
+
+  #description{
+    font-family: HF HySans Medium;
+    font-size: 45px;
+    font-weight: 100;
+  }
+
+  #weatherStatus{
+    position: absolute;
+    top: 76%;
+    left: 28%;
+    width: 150px; 
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  } 
+
+  #cityName{
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    background: #F5F1F1;
+    left: 28%;
+    top: 5%;
+    font-size: 30px;
+
+  }
+      
+
+
+
+  body{ 
+    background-color: rgb(87, 109, 129);
+   }
+
+  
+}
+

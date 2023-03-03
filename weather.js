@@ -31,9 +31,6 @@ userInput.addEventListener('keydown', (event) =>{
   
   if(event.keyCode === 13){
     const inputValue = event.target.value;
-    exit.style.display = "block";
-    
-
     
     fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&appid=${API_KEY}`)
       .then(response => response.json())
