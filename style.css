@@ -5,7 +5,7 @@
   transform: translate(-50%, -50%);
   width: 650px;
   height: 685px;
-
+  cursor: pointer;
   background: #F5F1F1;
   border-radius: 30px;
 }
