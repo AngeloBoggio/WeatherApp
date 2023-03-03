@@ -8,6 +8,8 @@ const cityName = document.getElementById('cityName');
 const weatherStatus = document.getElementById('weatherStatus');
 const searchForm = document.getElementById('searchForm');
 const exit = document.getElementById('exit');
+const searchHeader = document.getElementById('searchHeader');
+const body = document.getElementsByName('body');
 
 const lat = 25.7743;
 const lon = -80.1937;
@@ -17,6 +19,7 @@ const img = document.createElement('img');
 myImage.addEventListener('click', () => {
     myImage.classList.add('animate');
     setTimeout(() => {
+      searchHeader.style.display = 'none';
       secondImage.style.display = 'block';
       secondImage.classList.add('animate');
       textBox.classList.add('animate');
@@ -124,6 +127,7 @@ userInput.addEventListener('keydown', (event) =>{
             parent.appendChild(img);
 
           }
+
           exit.style.display = "block";
           weatherStatus.innerHTML = weatherdata.weather[0].description;
           cityName.innerHTML  = data[0].name;
@@ -133,6 +137,7 @@ userInput.addEventListener('keydown', (event) =>{
           secondImage.style.display ='none';
           myImage.style.display = 'none';
           weatherElement.innerHTML = ` ${temp}°`;
+          searchHeader.style.display = 'none';
         })
       })
       .catch(error => console.error(error));

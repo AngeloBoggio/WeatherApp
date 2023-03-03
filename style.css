@@ -10,6 +10,14 @@
   border-radius: 30px;
 }
 
+#searchHeader{
+  position: relative;
+  top: 385px;
+  left: 285px;
+  font-family: Google Sans,Roboto,arial,sans-serif;
+}
+
+
 #exit{
   position: absolute;
   top: 35px;
@@ -17,9 +25,6 @@
   display: none;
 }
 
-button:hover {
-  background-color: #3e8e41; /* Change background color on hover */
-}
 
 #searchButton{
   position: absolute;
@@ -162,5 +167,5 @@ button:hover {
 }
 
 body{ 
- background-color: rgb(92, 144, 189);
+ background-color: rgb(87, 109, 129);
 }
